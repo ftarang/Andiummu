@@ -68,6 +68,19 @@ nav.scrolled {
     object-fit: contain;
     transition: transform 0.4s ease;
 }
+@media screen and (max-width: 768px) {
+  /* Mengecilkan ukuran font teks logo di HP */
+  .logo, .logo span {
+    font-size: 1.4rem !important; /* Ubah angka ini (misal: 1.2rem atau 1.5rem) sesuai selera */
+  }
+
+  /* Mengecilkan ukuran gambar ikon logo di samping teks */
+  .logo-img {
+    width: 30px !important;
+    height: auto !important;
+  }
+}
+
 
 nav.scrolled .logo-img {
     transform: scale(0.85);
