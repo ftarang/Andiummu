@@ -498,3 +498,29 @@ footer {
         padding: 20px 15px;
     }
 }
+
+/* Pengaturan Responsif untuk Tampilan HP */
+@media screen and (max-width: 768px) {
+  body {
+    overflow-x: hidden;
+    padding: 0 10px;
+  }
+  
+  /* Membuat semua gambar otomatis menyesuaikan lebar layar HP */
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  /* Merapikan menu navigasi agar tidak bertumpuk */
+  #navbar {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 8px;
+    align-items: center;
+  }
+}
